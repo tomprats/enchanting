@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  <%= render "layouts/head" %>
+  <body class="<%= action_name %>">
+    <%= render "layouts/header" %>
+    <div class="clearfix"></div>
+    <div class="center-block content">
+      <%= yield %>
+    </div>
+    <div class="clearfix"></div>
+    <%= render "layouts/footer" %>
+  </body>
+</html>
