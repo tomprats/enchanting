@@ -16,13 +16,36 @@
 @import "bootstrap";
 @import "font-awesome";
 
-// Active page
-body.home .header a.home,
-body.about .header a.about,
-body.event .header a.event,
-body.contact .header a.contact,
-body.past .header a.past { color: $peach }
+body {
+  color: $aqua;
+  text-align: center;
+}
 
-.content {
-  width: $page-width;
+.container {
+  max-width: 900px;
+}
+
+.opening-text {
+  font-size: 18px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.recipe-start {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.recipe-body {
+  text-align: left;
+}
+
+.small-logo {
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: $peach;
 }
