@@ -1,9 +1,8 @@
 Enchanting::Application.routes.draw do
   root "pages#home"
 
-  resources :pages, path: "" do
-    collection do
-      get "home"
-    end
-  end
+  get :/, to: "pages#home", as: :home
+  get :gals, to: "pages#gals"
+  get :services, to: "pages#services"
+  get :contact, to: "pages#contact"
 end

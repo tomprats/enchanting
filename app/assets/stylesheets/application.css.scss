@@ -17,27 +17,25 @@
 @import "font-awesome";
 
 body {
-  color: $aqua;
-  text-align: center;
+  color: $content;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  font-family: "Champagne", cursive;
+}
+h1 {
+  color: $heading;
+  font-size: 48px;
 }
 
 .container {
   max-width: 900px;
 }
 
-.opening-text {
-  font-size: 18px;
+.row-spacing {
   margin-top: 30px;
   margin-bottom: 30px;
-}
-
-.recipe-start {
-  margin-top: 30px;
-  margin-bottom: 20px;
-}
-
-.recipe-body {
-  text-align: left;
 }
 
 .small-logo {
@@ -47,5 +45,12 @@ body {
 
 a {
   text-decoration: none;
-  color: $peach;
+  color: $heading;
 }
+
+.btn-peach {
+  @include button-variant($btn-primary-color, darken($heading, 10%), $heading);
+  @include button-size($padding-base-vertical, $padding-base-horizontal, $font-size-base, $line-height-base, 0);
+}
+
+.form-control { border-color: $heading; border-radius: 0; }

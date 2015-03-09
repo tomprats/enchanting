@@ -1,0 +1,16 @@
+<nav>
+  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapse">
+    <h3><%= fa_icon("navicon", text: "Menu") %></h3>
+  </button>
+  <div class="collapse navbar-collapse" id="collapse">
+    <ul class="nav">
+      <li><%= link_to "Home", root_path %></li>
+      <li class="bullet">&#8226;</li>
+      <li><%= link_to "Gals", gals_path %></li>
+      <li class="image-container"><%= image_tag "logo-small.png" %></li>
+      <li><%= link_to "Services", services_path %></li>
+      <li class="bullet">&#8226;</li>
+      <li><%= link_to "Contact", contact_path %></li>
+    </ul>
+  </div>
+</nav>

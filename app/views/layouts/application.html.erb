@@ -2,6 +2,21 @@
 <html>
   <%= render "layouts/head" %>
   <body>
-    <%= yield %>
+    <%= render "layouts/navbar" %>
+    <div class="container">
+      <%= yield %>
+
+      <div class="row small-logo">
+        <div class="col-sm-2 col-sm-offset-5">
+          <%= image_tag "logo-small.png", class: "img-responsive" %>
+        </div>
+      </div>
+
+      <div class="row text-center">
+        <div class="col-sm-12">
+          Made with <%= link_to "Love", "http://tomprats.com/love", target: :_blank %>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
