@@ -29,7 +29,7 @@ h1 {
   font-size: 48px;
 }
 
-.container {
+.container-fluid {
   max-width: 900px;
 }
 
@@ -54,3 +54,9 @@ a {
 }
 
 .form-control { border-color: $heading; border-radius: 0; }
+
+@media screen and (max-width: $grid-float-breakpoint) {
+  h1 {
+    font-size: 42px;
+  }
+}

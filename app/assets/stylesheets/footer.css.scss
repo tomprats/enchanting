@@ -1,0 +1,27 @@
+@import "variables";
+
+.footer-nav {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  ul.nav li {
+    float: none;
+    display: inline-block;
+    vertical-align: bottom;
+    a {
+      width: 50px;
+      margin: 5px 10px;
+      padding: 0;
+      &:hover {
+        background-color: transparent;
+      }
+    }
+    .footer-image {
+      width: 100%;
+    }
+  }
+  .image-container img { width: 100px; }
+}
+
+@media screen and (max-width: $grid-float-breakpoint) {
+  .footer-nav ul.nav li.image-container { display: none; }
+}

@@ -1,9 +1,16 @@
 @import "variables";
 
-.media .media-left { padding-top: 20px; }
-.media .media-right { padding-top: 20px; }
-.media img { width: 200px; }
-.media.image-left h1 { padding-left: 5px; }
-.media.image-left p { padding-left: 10px; }
-.media.image-right h1 { padding-right: 5px; text-align: right; }
-.media.image-right p { padding-right: 10px; text-align: right; }
+@media screen and (min-width: $grid-float-breakpoint+1) {
+  .media .media-left { padding-top: 20px; }
+  .media .media-right { padding-top: 20px; }
+  .media img { width: 200px; }
+  .media.image-left h1 { padding-left: 5px; }
+  .media.image-left p { padding-left: 10px; }
+  .media.image-right h1 { padding-right: 5px; text-align: right; }
+  .media.image-right p { padding-right: 10px; text-align: right; }
+}
+
+@media screen and (max-width: $grid-float-breakpoint) {
+  .media .media-left { display: none; }
+  .media .media-right { display: none; }
+}
