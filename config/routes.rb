@@ -5,4 +5,6 @@ Enchanting::Application.routes.draw do
   get :gals, to: "pages#gals"
   get :services, to: "pages#services"
   get :contact, to: "pages#contact"
+
+  post :contact_email, to: "emails#contact"
 end

@@ -20,15 +20,16 @@ nav {
     float: none;
     display: inline-block;
     vertical-align: bottom;
+    color: $aqua;
     font-size: 42px;
     font-family: "Champagne", cursive;
     a {
-      color: $content;
+      color: $aqua;
       padding: 0 15px;
       margin-bottom: 10px;
       border-bottom: 2px solid transparent;
       &:hover, &.active {
-        border-bottom: 2px solid $content;
+        border-bottom: 2px solid $aqua;
         background-color: transparent;
       }
     }

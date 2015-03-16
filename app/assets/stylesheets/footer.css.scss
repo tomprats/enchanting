@@ -22,6 +22,10 @@
   .image-container img { width: 100px; }
 }
 
+.love {
+  color: $aqua;
+}
+
 @media screen and (max-width: $grid-float-breakpoint) {
   .footer-nav ul.nav li.image-container { display: none; }
 }
